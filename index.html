@@ -3,10 +3,27 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/uikit.min.js"></script>
+		<script src="js/script.js"></script>
 	</head>
 	<body>
-		<p>Test!</p>
+		<div class="uk-grid">
+			<div class="uk-container uk-container-center">
+				<h1 class="uk-heading-large">IPv4 Validator</h1>
+			</div>
+		</div>
+
+		<div class="uk-grid">
+			<div class="uk-container uk-container-center">
+				<form class="uk-form">
+					<input class="uk-form-large uk-form-width-mini" type="text" placeholder="255" maxlength="3" id="input1" autofocus>
+					<input class="uk-form-large uk-form-width-mini" type="text" placeholder="255" maxlength="3" id="input2">
+					<input class="uk-form-large uk-form-width-mini" type="text" placeholder="255" maxlength="3" id="input3">
+					<input class="uk-form-large uk-form-width-mini" type="text" placeholder="255" maxlength="3" id="input4">
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
