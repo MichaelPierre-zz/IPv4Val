@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title></title>
+		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="vendors/uikit/css/uikit.min.css" />
 		<link rel="stylesheet" href="vendors/animate/animate.min.css" />
 		<link rel="stylesheet" href="resources/css/style.css" />
@@ -14,21 +15,46 @@
 	</head>
 	<body>
 		<div class="uk-grid">
-			<div class="uk-container uk-container-center">
-				<h1 class="uk-heading-large tlt">IPv4 Validator</h1>	
+			<div class="uk-width-1-1" id="header">
+				<h1 class="uk-heading-large uk-text-center tlt">IPv4 Validator</h1>
 			</div>
 		</div>
-
+		<div class="uk-grid">
+			<div class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
+				<div class="uk-grid">
+					<div class="uk-container uk-container-center" id="ip">
+						<form class="uk-form">
+							<fieldset data-uk-margin>
+								<legend class="uk-text-center">Enter IP v4 address</legend>
+								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input1" autofocus min="0" max="255" required >
+								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
+								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
+								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
+							</fieldset>
+						</form>	
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
+				<div class="uk-grid">
+					<div class="uk-container uk-container-center" id="subnet">
+						<form class="uk-form">
+							<fieldset data-uk-margin>
+								<legend class="uk-text-center">Enter Subnet Mask</legend>
+								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="255" maxlength="3" id="input1" autofocus min="255" max="255" required>
+								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
+								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
+								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="uk-grid">
 			<div class="uk-container uk-container-center">
-				<form class="uk-form">
-					<input class="uk-form-large uk-form-width-mini" type="text" placeholder="255" maxlength="3" id="input1" autofocus>
-					<input class="uk-form-large uk-form-width-mini" type="text" placeholder="255" maxlength="3" id="input2">
-					<input class="uk-form-large uk-form-width-mini" type="text" placeholder="255" maxlength="3" id="input3">
-					<input class="uk-form-large uk-form-width-mini" type="text" placeholder="255" maxlength="3" id="input4">
-				</form>
+				<p>Messages area</p>			
 			</div>
 		</div>
-		
 	</body>
 </html>

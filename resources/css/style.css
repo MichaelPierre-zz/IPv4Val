@@ -1,6 +1,34 @@
-.uk-container {
+html {
+	background-color: #E6E6FA;  /* Lavander */ 
 
-	margin-top: 100px;
-	border: 1px dashed green;
-	background-color: #080808;
 }
+
+h1,h2,h3,h4,h5,h6 {
+	color: #3B3B40;
+}
+
+h1 {
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	font-style: italic;	
+}
+
+#header {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	background-color: #75757F
+}
+
+#input1, #input2, #input3, #input4 {
+	font-family: 'Lora', serif;
+	font-size: 1.55em;
+	font-weight: 400;
+	width: 70px;
+}
+
+#ip, #subnet {
+	margin-bottom: 2em;
+}
+
+
+ 
