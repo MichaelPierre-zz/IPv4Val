@@ -1,22 +1,19 @@
 html {
-	background-color: #E6E6FA;  /* Lavander */ 
+	background-color: #C1E1A6;
+ } 
 
-}
-
-h1,h2,h3,h4,h5,h6 {
-	color: #3B3B40;
+h1,h2,h3,h4,h5,h6, p, legend {
+	color: #585858;
+	font-family: 'Lora', serif;
 }
 
 h1 {
-	font-family: 'Lora', serif;
 	font-weight: 400;
 	font-style: italic;	
 }
 
 #header {
-	margin-top: 2em;
-	margin-bottom: 2em;
-	background-color: #75757F
+	 padding: 40px 0;
 }
 
 #input1, #input2, #input3, #input4 {
@@ -27,8 +24,26 @@ h1 {
 }
 
 #ip, #subnet {
-	margin-bottom: 2em;
+	margin-bottom: 40px;
 }
 
+.dmessage {
+	margin-bottom: 50px;
+}
 
- 
+.footer {
+	background-color: #118C4E;
+	padding: 60px 0;
+	margin: 60px 0 0 0;
+} 
+
+li {
+	display: inline;
+	margin: 0;
+	padding: 0 5px;
+}
+
+img {
+	width: 32px;
+	height: 32px;
+}
