@@ -14,59 +14,48 @@
 		<script src="resources/js/script.js"></script>
 	</head>
 	<body>
-		<div class="uk-grid">
-			<div class="uk-width-1-1" id="header">
-				<h1 class="uk-heading-large uk-text-center tlt">IPv4 Validator</h1>
-			</div>
-		</div>
-		<div class="uk-grid dbody">
-			<div class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
-				<div class="uk-grid">
-					<div class="uk-container uk-container-center" id="ip">
-						<form class="uk-form">
-							<fieldset data-uk-margin>
-								<legend class="uk-text-center">Enter IP v4 address</legend>
-								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input1" autofocus min="0" max="255" required >
-								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
-								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
-								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
-							</fieldset>
-						</form>	
-					</div>
+		<div class="uk-container uk-container-center uk-text-center">
+			<h1 class="uk-heading-large tlt header">IP v4 Validator</h1>
+			
+			<p class="uk-text-large">Check whether you're on the same network using your IP and subnet mask!</p>
+
+			<div class="uk-grid">
+				<div class="uk-width-medium-1-2 ip">
+					<form class="uk-form">
+						<fieldset data-uk-margin>
+							<legend class="uk-text-center">Enter IP v4 address</legend>
+							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input1" autofocus min="0" max="255" required >
+							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
+							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
+							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
+						</fieldset>
+					</form>
+					<form class="uk-form subnet">
+						<fieldset data-uk-margin>
+							<legend class="uk-text-center">Enter Subnet Mask</legend>
+							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="255" maxlength="3" id="input1" autofocus min="255" max="255" required>
+							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
+							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
+							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
+						</fieldset>
+					</form>		
 				</div>
-			</div>
-			<div class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
-				<div class="uk-grid">
-					<div class="uk-container uk-container-center" id="subnet">
-						<form class="uk-form">
-							<fieldset data-uk-margin>
-								<legend class="uk-text-center">Enter Subnet Mask</legend>
-								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="255" maxlength="3" id="input1" autofocus min="255" max="255" required>
-								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
-								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
-								<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
-							</fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="uk-grid">
-			<div class="uk-container uk-container-center dmessage">
-				<article class="uk-article">
+				<div class="uk-width-medium-1-2 message">
+					<article class="uk-article">
 						<h3 class="uk-article-title uk-text-center">Success!</h3>
 						<p class="uk-article-lead uk-text-center">Your IP is on the same network!</p>
-				</article>
+					</article>
+				</div>
 			</div>
 		</div>
-		<div class="uk-grid footer">
+		<div class="footer">
 			<div class="uk-container uk-container-center uk-text-center">
 				<ul>
 					<li><a href="http://twitter.com/michaelpierre"><img src="resources/images/twitter_logo_white.png"></li>
 					<li><a href="http://github.com/michaelpierre"><img src="resources/images/GitHub-Mark-Light-32px.png"></li>
 				</ul>
 			</div>
-		</div>
+		</div>		
 	</body>
 </html>
 
