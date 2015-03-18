@@ -15,4 +15,10 @@ $(document).ready(function(){
 		if($(this).val().length==$(this).attr('maxlength'))
 			$(this).next(':input').focus()
 	})
+
+	$('#input1,#input2,#input3,#input4,#input5,#input6,#input7,#input8').focus(function(){
+			$(this).val('');
+			$(this).attr('placeholder','');
+	})
+		
 })
