@@ -53,3 +53,14 @@ img {
 	width: 32px;
 	height: 32px;
 }
+
+.uk-button-large {
+	font-family: 'Lora', serif;
+	color: #f8f8f8;
+	/*background-color: #FF9009;*/
+	/*background-color: #C6A6E1*/;
+	background-color: #8C114F;
+	margin-top: 40px;
+	border: 2px solid;
+	border-radius: 25px;
+}
