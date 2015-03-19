@@ -21,10 +21,6 @@ h1 {
 	 background-color: #118C4E; 
 }
 
-#ip, #subn, #message{ /* remove distractions */
-	background-color: #f9fafc; 
-}
-
 #input1, #input2, #input3, #input4, #subn #input5, #input6, #input7, #input8 {
 	font-family: 'Lora', serif;
 	font-size: 1.7em;
@@ -58,6 +54,39 @@ input[type=number]::-webkit-outer-spin-button {
 	margin: 40px 0 0 0;
 }
 
+/* Ease out transition for "remove distraction" */
+div.iponly {
+	transition: background-color 0.3s ease-out,
+	color 0.3s ease-out;
+}
+
+div.subnetonly {
+	transition: background-color 0.3s ease-out,
+	color 0.3s ease-out;
+}
+
+/* Remove distractions from ip only */
+div.iponly:hover, 
+div.iponly:active {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background-color: #f9fafc; 
+	transition: background-color 0.3s ease-in, 
+	color 0.3s ease-in;
+}
+
+/* Remove distractions from subnet only */
+div.subnetonly:hover, 
+div.subnetonly:active {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background-color: #f9fafc; 
+	transition: background-color 0.3s ease-in, 
+	color 0.3s ease-in;
+} 
+
 .message {
 	margin: 40px 0 0 0;
 }
@@ -79,11 +108,27 @@ img {
 	height: 32px;
 }
 
-.uk-button-large {
+#ghost-button {
 	font-family: 'Lora', serif;
-	color: #080808;
-	background-color: #8C114F;
-	margin-top: 40px;
-	border: 1px solid #118C4E;
-	border-radius: 25px;
+	text-align: center;
+	display: inline-block;
+	width:200px;
+	padding: 8px;
+	border: 2px solid #118C4E;
+	border-radius: 5px;
+	margin: 40px 0 0 0;
+	color: #585858;		
+	outline: none; 
+	text-decoration: none;
+	background-color: transparent;
+	transition: background-color 0.2s ease-out,
+	color 0.2s ease-out;
 }
+
+#ghost-button:hover, 
+#ghost-button:active {
+	background-color: #8C114F; 
+	color: #f9fafc;
+	transition: background-color 0.3s ease-in, 
+	color 0.3s ease-in;
+} 
