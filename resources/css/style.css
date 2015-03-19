@@ -1,9 +1,9 @@
 html {
-	background-color: #118C4E;
+		background-color: #118C4E;
  } 
 
- body {
- 	background-color: #C1E1A6; 
+ body { /* Background pattern from subtlepatterns.com */
+ 	background-image: url("../images/geometry2.png");
  }
 
 h1,h2,h3,h4,h5,h6, p, legend {
@@ -21,13 +21,17 @@ h1 {
 	 background-color: #118C4E; 
 }
 
-#input1, #input2, #input3, #input4, 
-#input5, #input6, #input7, #input8 {
+#ip, #subn, #message{ /* remove distractions */
+	background-color: #f9fafc; 
+}
+
+#input1, #input2, #input3, #input4, #subn #input5, #input6, #input7, #input8 {
 	font-family: 'Lora', serif;
 	font-size: 1.7em;
 	font-weight: normal;
 	text-align: center;
 	color: #080808;
+	background-color: #f9fafc;
 	width: 48px;
 	letter-spacing: 4px;
 	padding: 0 0 0 6px;
@@ -35,7 +39,7 @@ h1 {
 	margin: 0;
 }
 
-/* Disable input spinners */
+/* Disable input spinners */ 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
 	-webkit-appearance: none;
@@ -77,10 +81,9 @@ img {
 
 .uk-button-large {
 	font-family: 'Lora', serif;
-	color: #f8f8f8;
+	color: #080808;
 	background-color: #8C114F;
 	margin-top: 40px;
-	border: 2px solid #f8f8f8;
+	border: 1px solid #118C4E;
 	border-radius: 25px;
 }
-
