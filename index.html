@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title></title>
+		<meta charset="utf-8" />
 		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="vendors/uikit/css/uikit.min.css" />
 		<link rel="stylesheet" href="vendors/animate/animate.min.css" />
@@ -21,22 +22,28 @@
 
 			<div class="uk-grid">
 				<div class="uk-width-medium-1-2 ip">
-					<form class="uk-form">
+					<form class="uk-form-blank">
 						<fieldset data-uk-margin>
 							<legend class="uk-text-center">Enter IP v4 address</legend>
-							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input1" autofocus min="0" max="255" required >
-							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
-							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
-							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
+							<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input1" autofocus min="0" max="255" required>
+							<span id="bull">&bull;</span>
+							<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
+							<span id="bull">&bull;</span>
+							<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
+							<span id="bull">&bull;</span>
+							<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
 						</fieldset>
 					</form>
-					<form class="uk-form subnet">
+					<form class="uk-form-blank subnet">
 						<fieldset data-uk-margin>
 							<legend class="uk-text-center">Enter Subnet Mask</legend>
-							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="255" maxlength="3" id="input5" autofocus min="255" max="255" required>
-							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input6" min="0" max="255" required>
-							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input7" min="0" max="255" required>
-							<input class="uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input8" min="1" max="255" required>
+							<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="255" maxlength="3" id="input5" min="255" max="255" required>
+							<span id="bull">&bull;</span>
+							<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input6" min="0" max="255" required>
+							<span id="bull">&bull;</span>
+							<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input7" min="0" max="255" required>
+							<span id="bull">&bull;</span>
+							<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input8" min="1" max="255" required>
 						</fieldset>
 						<button class="uk-button-large uk-width-1-3" disabled>GO!</button>
 					</form>		

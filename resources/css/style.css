@@ -24,9 +24,30 @@ h1 {
 #input1, #input2, #input3, #input4, 
 #input5, #input6, #input7, #input8 {
 	font-family: 'Lora', serif;
-	font-size: 1.55em;
-	font-weight: 400;
-	width: 70px;
+	font-size: 1.7em;
+	font-weight: normal;
+	text-align: center;
+	color: #080808;
+	width: 48px;
+	letter-spacing: 4px;
+	padding: 0 0 0 6px;
+	border: 0;
+	margin: 0;
+}
+
+/* Disable input spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+	border: 0;
+}
+
+#bull{
+	font-size:large;
+	padding: 0;
+	vertical-align: sub;
+	color: #080808;
 }
 
 .ip, .subnet {
@@ -40,7 +61,7 @@ h1 {
 .footer {
 	background-color: #118C4E;
 	padding: 40px 0;
-	margin: 100px 0 0 0;
+	margin: 60px 0 0 0;
 } 
 
 li {
@@ -57,10 +78,9 @@ img {
 .uk-button-large {
 	font-family: 'Lora', serif;
 	color: #f8f8f8;
-	/*background-color: #FF9009;*/
-	/*background-color: #C6A6E1*/;
 	background-color: #8C114F;
 	margin-top: 40px;
-	border: 2px solid;
+	border: 2px solid #f8f8f8;
 	border-radius: 25px;
 }
+
