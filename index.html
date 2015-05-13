@@ -1,18 +1,13 @@
 <!doctype html>
 <html>
 	<head>
-		<title></title>
+		<title>IP v4 Validator!</title>
 		<meta charset="utf-8" />
 		<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="vendors/uikit/css/uikit.min.css" />
 		<link rel="stylesheet" href="vendors/animate/animate.min.css" />
 		<link rel="stylesheet" href="resources/css/style.css" />
-		<script src="vendors/jquery/jquery-1.11.2.min.js"></script>
-		<script src="vendors/uikit/js/uikit.min.js"></script>
-		<script src="vendors/letteringjs/jquery.lettering.js"></script>
-		<script src="vendors/textillatejs/jquery.textillate.js"></script>
-		<script src="vendors/colorflow/colorFlow.js"></script>
-		<script src="resources/js/script.js"></script>
+		
 	</head>
 	<body>
 		<div class="uk-container uk-container-center uk-text-center">
@@ -22,52 +17,70 @@
 
 			<div class="uk-grid">
 				<div class="uk-width-medium-1-2">
-					<div class="iponly">
-						<form class="uk-form-blank ip">
-							<fieldset data-uk-margin>
-								<legend class="uk-text-center">Enter IP v4 address</legend>
-								<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input1" autofocus min="0" max="255" required>
-								<span id="bull">&bull;</span>
-								<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input2" min="0" max="255" required>
-								<span id="bull">&bull;</span>
-								<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input3" min="0" max="255" required>
-								<span id="bull">&bull;</span>
-								<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input4" min="1" max="255" required>
-							</fieldset>
+					<div class="addresses">
+						<form class="uk-form-blank">
+							<div id="destip">
+								<fieldset data-uk-margin>
+									<legend class="uk-text-center">Destination IP Address</legend>
+									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input1" min="0" max="255" autofocus maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input2" min="0" max="255" maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input3" min="0" max="255" maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input4" min="1" max="255" maxlength="3" required>
+								</fieldset>
+							</div>
+							<div id="yourip">
+								<fieldset data-uk-margin>
+									<legend class="uk-text-center">Your IP address</legend>
+									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input5" autofocus min="0" max="255" maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input6" min="0" max="255" maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input7" min="0" max="255" maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input8" min="1" max="255" maxlength="3" required>
+								</fieldset>
+							</div>
+							<div id="subnet">
+								<fieldset data-uk-margin>
+									<legend class="uk-text-center">Subnet Mask</legend>
+									<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="255" id="input9" min="255" max="255" maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input10" min="0" max="255" maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input11" min="0" max="255" maxlength="3" required>
+									<span class="bull">&bull;</span>
+									<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input12" min="1" max="255" maxlength="3" required>
+								</fieldset>
+							</div>
 						</form>
+						<button class="uk-button-large uk-width-1-2" id="ghost-button">GO!</button>
 					</div>
-					<div class="subnetonly">
-						<form class="uk-form-blank subnet" id="subn">
-							<fieldset data-uk-margin>
-								<legend class="uk-text-center">Enter Subnet Mask</legend>
-								<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="255" maxlength="3" id="input5" min="255" max="255" required>
-								<span id="bull">&bull;</span>
-								<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input6" min="0" max="255" required>
-								<span id="bull">&bull;</span>
-								<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input7" min="0" max="255" required>
-								<span id="bull">&bull;</span>
-								<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" maxlength="3" id="input8" min="1" max="255" required>
-							</fieldset>						
-						</form>
-					</div>
-					<button class="uk-button-large uk-width-1-3 tlt" id="ghost-button"><!--<a href="#">-->GO!<!--</a>--></button>		
 				</div>
-				<div class="uk-width-medium-1-2 message" id="message">
+				<div class="uk-width-medium-1-2 message">
 					<article class="uk-article">
 						<h3 class="uk-article-title uk-text-center">Success!</h3>
 						<p class="uk-article-lead uk-text-center">Your IP is on the same network!</p>
 					</article>
+				</div>		
 				</div>
 			</div>
-		</div>		
 		<div class="footer">
 			<div class="uk-container uk-container-center uk-text-center">
 				<ul>
-					<li><a href="http://twitter.com/michaelpierre"><img src="resources/images/twitter_logo_white.png"></li>
-					<li><a href="http://github.com/michaelpierre"><img src="resources/images/GitHub-Mark-Light-32px.png"></li>
+					<li><a href="http://twitter.com/michaelpierre"><img src="resources/images/twitter_logo_white.png" alt="Twitter Logo"></a></li>
+					<li><a href="http://github.com/michaelpierre"><img src="resources/images/GitHub-Mark-Light-32px.png" alt="GitHub Logo"></a></li>
 				</ul>
 			</div>
-		</div>		
+		</div>
+		<script src="vendors/jquery/jquery-1.11.2.min.js"></script>
+		<script src="vendors/uikit/js/uikit.min.js"></script>
+		<script src="vendors/letteringjs/jquery.lettering.js"></script>
+		<script src="vendors/textillatejs/jquery.textillate.js"></script>
+		<script src="vendors/colorflow/colorFlow.js"></script>
+		<script src="resources/js/script.js"></script>		
 	</body>
 </html>
 
