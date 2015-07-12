@@ -18,45 +18,48 @@
 			<div class="uk-grid">
 				<div class="uk-width-medium-1-2">
 					<div class="addresses">
-						<form class="uk-form-blank">
+						<form class="uk-form-blank" id="myform" novalidate>
 							<div id="destip">
 								<fieldset data-uk-margin>
 									<legend class="uk-text-center">Destination IP Address</legend>
-									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input1" min="0" max="255" autofocus maxlength="3" required>
+									<div id="destip-error"></div>
+									<input class="uk-form uk-form-large uk-form-width-mini" id="input1" min="0" max="255" autofocus maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input2" min="0" max="255" maxlength="3" required>
+									<input class="uk-form uk-form-large uk-form-width-mini"  placeholder="000" id="input2" min="0" max="255" maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input3" min="0" max="255" maxlength="3" required>
+									<input class="uk-form uk-form-large uk-form-width-mini"  placeholder="000" id="input3" min="0" max="255" maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input4" min="1" max="255" maxlength="3" required>
+									<input class="uk-form uk-form-large uk-form-width-mini"  placeholder="000" id="input4" min="1" max="255" maxlength="3">
 								</fieldset>
 							</div>
 							<div id="yourip">
 								<fieldset data-uk-margin>
 									<legend class="uk-text-center">Your IP address</legend>
-									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input5" autofocus min="0" max="255" maxlength="3" required>
+									<div id="yourip-error"></div>
+									<input class="uk-form uk-form-large uk-form-width-mini"  placeholder="000" id="input5" min="0" max="255" maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input6" min="0" max="255" maxlength="3" required>
+									<input class="uk-form uk-form-large uk-form-width-mini"  placeholder="000" id="input6" min="0" max="255" maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input7" min="0" max="255" maxlength="3" required>
+									<input class="uk-form uk-form-large uk-form-width-mini"  placeholder="000" id="input7" min="0" max="255" maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input8" min="1" max="255" maxlength="3" required>
+									<input class="uk-form uk-form-large uk-form-width-mini"  placeholder="000" id="input8" min="1" max="255" maxlength="3">
 								</fieldset>
 							</div>
 							<div id="subnet">
 								<fieldset data-uk-margin>
 									<legend class="uk-text-center">Subnet Mask</legend>
-									<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="255" id="input9" min="255" max="255" maxlength="3" required>
+									<div id="subnet-error"></div>
+									<input class="uk-form-blank uk-form-large uk-form-width-mini"  placeholder="255" id="input9" min="255" max="255" maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input10" min="0" max="255" maxlength="3" required>
+									<input class="uk-form-blank uk-form-large uk-form-width-mini"  placeholder="000" id="input10" min="0" max="255" maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input11" min="0" max="255" maxlength="3" required>
+									<input class="uk-form-blank uk-form-large uk-form-width-mini"  placeholder="000" id="input11" min="0" max="255" maxlength="3">
 									<span class="bull">&bull;</span>
-									<input class="uk-form-blank uk-form-large uk-form-width-mini" type="number" placeholder="000" id="input12" min="1" max="255" maxlength="3" required>
+									<input class="uk-form-blank uk-form-large uk-form-width-mini"  placeholder="000" id="input12" min="1" max="255" maxlength="3">
 								</fieldset>
 							</div>
+							<button type="submit" class="uk-button-large uk-width-1-2" id="ghost-button">GO!</button>
 						</form>
-						<button class="uk-button-large uk-width-1-2" id="ghost-button">GO!</button>
 					</div>
 				</div>
 				<div class="uk-width-medium-1-2 message">

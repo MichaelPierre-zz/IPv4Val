@@ -27,6 +27,8 @@ h1 {
 }
 
 
+
+
 #input1, 
 #input2,
 #input3,
@@ -42,7 +44,7 @@ h1 {
 	padding: 0 0 0 6px;
 	border: 0;
 	margin: 0;
-	width: 48px;
+	width: 55px;
 	color: #080808;
 	background-color: #f9fafc;
 	font-family: 'Lora', serif;
@@ -71,9 +73,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 fieldset {
-	/*border-color: #118C4E;*/
-	border: 2px solid #118C4E;	
+	border: 1px solid #118C4E;
 	border-radius: 5px;
+	padding-bottom: 20px;
 }
 
 
@@ -84,24 +86,32 @@ fieldset {
 
 /* Ease out transition for "remove distraction" */
 #destip {
-	transition: background-color 0.3s ease-out,
+	/*transition: background-color 0.3s ease-out,
 	color 0.3s ease-out;
+	*/
+	padding-bottom: 10px;
 }
 
 
 #yourip {
-	transition: background-color 0.3s ease-out,
+	/*transition: background-color 0.3s ease-out,
 	color 0.3s ease-out;
+	*/
+	padding-bottom: 10px;
 }
 
 
 #subnet {
-	transition: background-color 0.3s ease-out,
+	/*transition: background-color 0.3s ease-out,
 	color 0.3s ease-out;
+	*/
+	padding-bottom: 10px;
 }
 
 
 /* Remove distractions from ip only */
+
+/*
 #destip:hover, 
 #destip:active {
 	padding: 0;
@@ -111,9 +121,11 @@ fieldset {
 	transition: background-color 0.3s ease-in, 
 	color 0.3s ease-in;
 }
+*/
 
 
 /* Remove distractions from ip only */
+/*
 #yourip:hover, 
 #yourip:active {
 	padding: 0;
@@ -123,9 +135,10 @@ fieldset {
 	transition: background-color 0.3s ease-in, 
 	color 0.3s ease-in;
 }
-
+*/
 
 /* Remove distractions from subnet only */
+/*
 #subnet:hover, 
 #subnet:active {
 	padding: 0;
@@ -135,7 +148,7 @@ fieldset {
 	transition: background-color 0.3s ease-in, 
 	color 0.3s ease-in;
 } 
-
+*/
 
 li {
 	display: inline;
@@ -187,3 +200,32 @@ img {
 	margin: 60px 0 0 0;
 	background-color: #118C4E;
 } 
+
+.myerror{
+	background-color: blue;
+}
+
+#destip-error, #yourip-error, #subnet-error{
+	height: 10px;
+	padding: 5px;
+}
+
+.error-message-pos1{
+	position: relative;
+	left: -110px;	
+}
+
+.error-message-pos2{
+	position: relative;
+	left: -35px;
+}
+
+.error-message-pos3{
+	position: relative;
+	left: 40px;	
+}
+
+.error-message-pos4{
+	position: relative;
+	left: 110px;
+}
